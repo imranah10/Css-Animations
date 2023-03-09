@@ -100,7 +100,7 @@ transition-timing-function: linear; */
 
   animation-name: bounce;
   animation-duration: 3s;
-  animation-timing-function: ease-in;
+  animation-timing-function: ease-in-out;
   animation-iteration-count: infinite;
   animation-direction: alternate;
 }
@@ -141,3 +141,147 @@ transition-timing-function: linear; */
     background-color: aqua;
 
 } */
+
+
+/* making responsive */
+
+/* for 801px-900px */
+@media(max-width:900px){
+
+  .box {
+    height: 140px;
+    width: 140px;
+    font-size: 2rem;
+    text-align: center;
+    font-weight: 600px;
+    line-height: 150px;
+   
+    margin-top: 50px;
+    margin-left: 20%;
+  }
+}
+/* for 601px-800px  */
+
+@media(max-width:800px){
+  h1{
+    font-size: 1.8rem;
+  }
+  .ballbox{
+    margin-right: 25px;
+  }
+
+.ball {
+  height: 60px;
+  width: 60px;
+ 
+  border-radius: 50px;
+ 
+  text-align: center;
+  font-size: 1.4rem;
+  font-weight: 600;
+  line-height: 60px;
+  
+  animation-name: bounce;
+ 
+
+
+ 
+}
+
+@keyframes bounce {
+  from {
+    transform: translate(0px, -450px);
+  }
+  to {
+    transform: translate(0px, -20px);
+  }
+}
+
+
+.box {
+  height: 150px;
+  width: 150px;
+  font-size: 2rem;
+  text-align: center;
+  font-weight: 600px;
+  line-height: 150px;
+ 
+  margin-top: 50px;
+  margin-left: 20%;
+}
+}
+
+
+/* ball animation adjustment 600-700px */
+
+@media(max-width:500px){
+  .ball{
+    animation-name: bounce;
+  }
+ 
+
+
+ 
+
+
+@keyframes bounce {
+  from {
+    transform: translate(0px, -190px);
+  }
+  to {
+    transform: translate(0px, 200px);
+  }
+}
+}
+
+
+@media(max-width:400px){
+  h1{
+    font-size: 1.4rem;
+  }
+  .ballbox{
+    margin-right: 25px;
+  }
+
+.ball {
+  height: 40px;
+  width: 40px;
+ 
+  border-radius: 50px;
+ 
+  text-align: center;
+  font-size: 1.4rem;
+  font-weight: 600;
+  line-height: 40px;
+  
+  animation-name: bounce;
+ 
+
+
+ 
+}
+
+@keyframes bounce {
+  from {
+    transform: translate(0px, -450px);
+  }
+  to {
+    transform: translate(0px, -20px);
+  }
+}
+
+
+.box {
+  height: 150px;
+  width: 150px;
+  font-size: 2rem;
+  text-align: center;
+  font-weight: 600px;
+  line-height: 150px;
+ 
+  margin-top: 50px;
+  margin-left: 20%;
+}
+}
+
+
